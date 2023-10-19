@@ -1,0 +1,12 @@
+.idea
+*.iml
+settings.xml
+/target/
+/.classpath
+/.DS_Store
+/.project
+/.gradle/
+*.class
+build/
+
+**/*Result.docx

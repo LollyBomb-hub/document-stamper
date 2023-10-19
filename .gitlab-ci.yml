@@ -1,0 +1,12 @@
+docx-stamper:
+  image: gradle:jdk11
+  stage: build
+  variables:
+    GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+    GRADLE_USER_HOME: "/cache/oreka/.gradle"
+  script:
+    - cd $CI_PROJECT_DIR/
+    - gradle publish
+  only:
+    refs:
+      - master
